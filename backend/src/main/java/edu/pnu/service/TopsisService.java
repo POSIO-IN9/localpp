@@ -28,7 +28,7 @@ public class TopsisService {
             throw new IllegalStateException("No data available to process");
         }
 
-        // 데이터와 course_id를 매핑합니다.
+        
         List<DataRow> data = new ArrayList<>();
 
         for (Edu_list edu : eduLists) {
@@ -63,7 +63,7 @@ public class TopsisService {
         // 이상적 솔루션과의 유사도 계산
         double[] similarityToIdeal = calculateSimilarity(distanceToIdeal, distanceToAntiIdeal);
 
-        // 스코어를 Edu_list에 추가하고 반환
+        
         return updateEduListsWithScores(eduLists, similarityToIdeal);
     }
 

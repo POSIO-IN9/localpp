@@ -39,7 +39,6 @@ public class TopsisService {
         int numRows = data.size();
         int numCols = data.get(0).getValues().length;
 
-        // List를 Matrix로 변환
         double[][] matrix = new double[numRows][numCols];
         for (int i = 0; i < numRows; i++) {
             matrix[i] = data.get(i).getValues();
